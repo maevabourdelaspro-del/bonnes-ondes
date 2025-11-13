@@ -70,9 +70,12 @@ footer {
 section {
     width:100%;
  }
-   nav ul {
-    flex-wrap: wrap;
- }
+   nav {
+    left: auto;      
+    right: 30px;    
+    transform: none; 
+  }
 }
+
 
 
