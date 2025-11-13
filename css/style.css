@@ -64,5 +64,10 @@ footer {
   color: #ffffff;
   text-align: center;
   padding: 20px;
+}
 
+@media screen (max-width: 1024px){
+section {
+width:100%;
+ }
 }
