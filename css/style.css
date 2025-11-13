@@ -53,7 +53,7 @@ h2 {
 }
 
 section {
-  width: 1000px;           
+  max-width: 1000px;           
   padding: 20px;          
   background-color: #ffffff;
   margin: 20px auto;
@@ -64,4 +64,5 @@ footer {
   color: #ffffff;
   text-align: center;
   padding: 20px;
+
 }
