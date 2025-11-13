@@ -70,10 +70,8 @@ footer {
 section {
     width:100%;
  }
- nav ul {
-    flex-direction: column;
-    align-items: center;    
-    gap: 10px;             
+   nav ul {
+    flex-wrap: wrap;
  }
 }
 
