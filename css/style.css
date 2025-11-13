@@ -73,7 +73,8 @@ section {
  nav ul {
     flex-direction: column;
     align-items: center;    
-    gap: 10px;              /* espace entre les liens */
-  }
+    gap: 10px;             
+ }
 }
+
 
