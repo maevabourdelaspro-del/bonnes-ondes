@@ -67,18 +67,17 @@ footer {
   padding: 20px;
 }
 
-@media screen (max-width: 1024px){
-  article {
-    width: 100%;
-  }
-}
-
 /* Menu à droite sur mobile */
-@media screen (max-width: 768px) {
+@media screen and (max-width: 768px) {
   nav {
-    position: static; 
-    transform: none;  
-    margin-left: auto;
+    position: static; /* optionnel, static est la valeur par défaut */
+    transform: none;  /* optionnel */
+    margin-left: 0;   /* supprimer auto qui ne fonctionne pas ici */
+  }
+
+  nav ul {
+    flex-direction: row; /* pour garder le menu horizontal */
+    justify-content: flex-end; /* pousser les éléments à droite */
   }
 }
 
@@ -92,3 +91,4 @@ footer {
   h4 { font-size: 12pt; color: black; }
   }
 }
+
