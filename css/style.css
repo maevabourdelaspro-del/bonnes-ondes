@@ -68,7 +68,7 @@ footer {
 
 @media screen and (max-width: 1024px) {
   section {
-    width: 90%;
+    width: 70%;
   }
 
   header {
@@ -77,5 +77,6 @@ footer {
     gap: 10px;                  
   }
 }
+
 
 
