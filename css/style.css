@@ -1,3 +1,4 @@
+/* ==== Styles de base ==== */
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f4f4f4;   
@@ -8,9 +9,9 @@ body {
 }
 
 header {
-  position: relative; 
   display: flex;
   align-items: center;
+  justify-content: space-between; /* logo à gauche, menu à droite */
   background-color: #111111;
   padding: 15px 30px;
 }
@@ -30,9 +31,7 @@ h1 {
 }
 
 nav {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative; /* plus besoin d'absolute ni transform */
 }
 
 nav ul {
@@ -53,10 +52,10 @@ h2 {
 }
 
 section {
-  max-width: 1000px;           
+  width: 1000px; 
   padding: 20px;          
   background-color: #ffffff;
-  margin: 20px auto;
+  margin: auto;
 }
 
 footer {
@@ -66,19 +65,13 @@ footer {
   padding: 20px;
 }
 
-@media screen (max-width: 1024px){
-section {
-    width:100%;
- }
-  nav {
-   position: absolute;  
-    left: auto;          
-    right: 30px;        
-    transform: none;     
+@media screen and (max-width: 1024px) {
+  section {
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
   }
 }
-
-
-
-
-
