@@ -34,7 +34,7 @@ nav {
   left: 50%;
   transform: translateX(-50%);
 }
-
+/* Cela m'a permis d'avoir un menu moderne et centré */
 nav ul {
   list-style: none;
   margin: 0;
@@ -53,7 +53,7 @@ h2 {
 }
 
 section {
-  width: 1000x; 
+  width: 1000px; 
   padding: 20px;          
   background-color: #ffffff;
   margin: auto;
@@ -65,12 +65,3 @@ footer {
   text-align: center;
   padding: 20px;
 }
-
-
-
-
-
-
-
-
-
