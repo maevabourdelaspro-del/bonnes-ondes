@@ -1,4 +1,3 @@
-/* ==== Styles de base ==== */
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f4f4f4;   
@@ -9,9 +8,9 @@ body {
 }
 
 header {
+  position: relative; 
   display: flex;
   align-items: center;
-  justify-content: space-between; /* logo à gauche, menu à droite */
   background-color: #111111;
   padding: 15px 30px;
 }
@@ -31,7 +30,9 @@ h1 {
 }
 
 nav {
-  position: relative; /* plus besoin d'absolute ni transform */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 nav ul {
@@ -67,7 +68,7 @@ footer {
 
 @media screen and (max-width: 1024px) {
   section {
-    width: 100%;
+    width: 90%;
   }
 
   header {
@@ -76,4 +77,5 @@ footer {
     gap: 10px;                  
   }
 }
+
 
