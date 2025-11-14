@@ -70,12 +70,13 @@ footer {
 section {
     width:100%;
  }
-   nav {
-    left: auto;      
-    right: 30px;    
-    transform: none; 
+   position: absolute;  
+    left: auto;          
+    right: 30px;        
+    transform: none;     
   }
 }
+
 
 
 
