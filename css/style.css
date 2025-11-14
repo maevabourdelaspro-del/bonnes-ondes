@@ -70,12 +70,14 @@ footer {
 section {
     width:100%;
  }
+  nav {
    position: absolute;  
     left: auto;          
     right: 30px;        
     transform: none;     
   }
 }
+
 
 
 
