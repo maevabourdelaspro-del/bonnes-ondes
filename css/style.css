@@ -9,6 +9,7 @@ body {
 header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background: #111;
   padding: 15px 30px;
   position: relative;
@@ -28,7 +29,6 @@ h1 {
   height: 80px;
 }
 
-/* Cela m'a permis d'avoir un menu moderne et centré */
 nav {
   position: absolute;
   left: 50%;
@@ -66,24 +66,29 @@ footer {
   text-align: center;
   padding: 20px;
 }
-/* --- J'ai remarqué en publiant mon site que cela n'était pas adapté au téléphone notamment à cause de mon menu que j'ai choisi de mettre verticalement et au milieu du header--- */
-@media screen and (max-width: 768px) {
-  header {
-    flex-direction: column; 
-    align-items: center;    
-  }
 
+@media screen (max-width: 1024px){
+  article {
+    width: 100%;
+  }
+}
+
+/* Menu à droite sur mobile */
+@media screen (max-width: 768px) {
   nav {
-    position: static;      
-    transform: none;        
-    width: 100%;            
-    text-align: center;     
+    position: static; 
+    transform: none;  
+    margin-left: auto;
   }
+}
 
-  nav ul {
-    flex-direction: column; 
-    gap: 10px;              
-    padding: 0;
-    margin: 10px 0 0 0;
+@media print {
+  article { width: 100%; margin: 10px; }
+  header, footer { display: none; }
+  p { font-size: 11pt; color: black; }
+  h1 { font-size: 18pt; color: black; }
+  h2 { font-size: 16pt; color: black; }
+  h3 { font-size: 14pt; color: black; }
+  h4 { font-size: 12pt; color: black; }
   }
 }
