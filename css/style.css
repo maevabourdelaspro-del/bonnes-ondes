@@ -6,11 +6,12 @@ body {
   padding: 0;
 }
 
-/* J'ai d'abord voulu mettre mon logo et titre à gauche et le menu au milieu mais j'ai eu des difficultés sur le rendu téléphone, qui m'a contrainte à mettre tout au milieu */
+/* J'ai d'abord voulu mettre mon logo et titre à gauche et le menu au milieu mais j'ai eu des difficultés 
+sur le rendu téléphone, qui m'a contrainte à mettre tout au milieu afin qu'il n'y ait plus de chevauchement*/
 header {
   background-color: #333333;
   color: white;
-  padding: 20px;
+  padding: 20px; /* Pour ne pas coller aux bordures */
   text-align: center;
 }
 
@@ -22,7 +23,6 @@ header img {
 header h1 {
   display: inline;
   margin-left: 10px;
-  font-size: 2rem;
 }
 
 nav ul {
@@ -44,7 +44,7 @@ nav a {
 section {
   max-width: 1000px;
   margin: auto;
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Pour espacer les sections */
   padding: 20px;
   background-color: #ffffff;
 }
@@ -64,7 +64,7 @@ footer {
 footer a {
   color: blue;
   text-decoration: none;
-  margin: 0 5px;
+  margin: 5px;
 }
 
 @media print {
@@ -83,5 +83,3 @@ footer a {
   width:100%;
   }
 }
-
-
