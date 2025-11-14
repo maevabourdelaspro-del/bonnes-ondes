@@ -79,7 +79,11 @@ footer {
   nav ul {
     flex-direction: column; 
   }
+  section {
+  width: 95%;
+  }
 }
+
 
 
 
