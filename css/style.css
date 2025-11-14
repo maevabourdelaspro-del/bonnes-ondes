@@ -68,7 +68,7 @@ footer a {
 }
 
 @media print {
-  article { width: 100%; margin: 10px; }
+  section { width: 100%; margin: 10px; }
   header, footer { display: none; }
   p { font-size: 11pt; color: black; }
   h1 { font-size: 18pt; color: black; }
@@ -79,7 +79,8 @@ footer a {
 }
 
 @media screen (max-width: 1024px){
-  article {
+  section {
   width:100%;
   }
 }
+
