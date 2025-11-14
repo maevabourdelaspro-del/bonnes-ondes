@@ -67,9 +67,18 @@ footer {
   padding: 20px;
 }
 /* --- J'ai remarqué en publiant mon site que cela n'était pas adapté au téléphone --- */
-@media screen and (max-width: 1024px) {
-  article {
-  width: 100%;
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column; /* empile logo/titre et menu */
+    align-items: center;    /* centre le contenu */
+  }
+
+  nav {
+    position: static;       /* supprime absolute */
+    transform: none;        /* annule le centrage avec translate */
+    margin-top: 10px;       /* espace sous le titre */
   }
 }
+
+
 
