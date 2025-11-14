@@ -75,7 +75,6 @@ footer a {
   h2 { font-size: 16pt; color: black; }
   h3 { font-size: 14pt; color: black; }
   h4 { font-size: 12pt; color: black; }
-  }
 }
 
 @media screen (max-width: 1024px){
@@ -83,4 +82,5 @@ footer a {
   width:100%;
   }
 }
+
 
