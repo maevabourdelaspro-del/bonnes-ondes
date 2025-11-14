@@ -30,9 +30,10 @@ h1 {
 }
 
 nav {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  position: static;          
+  display: flex;
+  justify-content: center;   
+  margin-top: 10px;
 }
 
 nav ul {
@@ -66,14 +67,13 @@ footer {
   padding: 20px;
 }
 
-@media screen and (max-width: 1024px) {
-  header {
-    flex-direction: column; /* logo au-dessus, menu dessous */
-  }
-  section {
-    width: 90%;
-  }
- }
+@media (max-width: 768px) {
+  section { width: 95%; }
+  .logo-titre img { height: 50px; }
+  nav ul { flex-direction: column; }
+}
+
+
 
 
 
